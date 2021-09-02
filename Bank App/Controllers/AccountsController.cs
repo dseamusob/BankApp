@@ -22,7 +22,7 @@ namespace Bank_App.Controllers
 
         // GET: Accounts
         
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index() 
         {
             return View(await _context.Account.ToListAsync());
         }
